@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git@qekosoft.com:node-enom-dyndns.git"
+    "url": "https://github.com/hakovala/node-enom-dyndns.git"
   },
   "author": "Harri Kovalainen <hakovala@gmail.com>",
   "license": "MIT",

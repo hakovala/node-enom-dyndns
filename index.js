@@ -52,6 +52,7 @@ Enom.updateRecord = function(opt, cb) {
 	}
 
 	var uri = url.format(options);
+	console.log(uri);
 	http.get(uri, function(res) {
 		var body = '';
 		res.on('data', function(chunk) {

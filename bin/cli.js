@@ -8,7 +8,6 @@ var argv_opt = {
 	alias: {
 		domain: 'd',
 		password: 'p',
-		hostname: 'h',
 		check: 'c',
 		force: 'f',
 		help: 'h'
@@ -46,7 +45,8 @@ enom.hasChanged(argv.domain, function(err, changed) {
 		console.log("Address changed, updating record");
 		enom.updateRecord({
 			domain: argv.domain,
-			password: argv.password
+			password: argv.password,
+			hostname: argv.hostname
 		}, function(err, res) {
 			if (err) {
 				console.error(err.message);
