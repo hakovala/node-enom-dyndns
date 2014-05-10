@@ -1,0 +1,18 @@
+{
+  "name": "enom-dyndns",
+  "version": "0.1.0",
+  "description": "Enom Dynamic DNS updater",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@qekosoft.com:node-enom-dyndns.git"
+  },
+  "author": "Harri Kovalainen <hakovala@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "minimist": "0.0.9"
+  },
+  "bin": {
+    "enom-dyndns": "./bin/cli.js"
+  }
+}
