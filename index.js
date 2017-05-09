@@ -4,7 +4,7 @@ var dns = require('dns');
 var url = require('url');
 var http = require('http');
 
-var REMOTE_ADDRESS = 'http://www.remoteAddress.net/api/ip';
+var REMOTE_ADDRESS = 'http://ipcheck.com';
 var ENOM_HOSTNAME = 'dynamic.name-services.com';
 
 var Enom = module.exports = {};
@@ -77,7 +77,8 @@ function getJson(uri, cb) {
 			body += chunk;
 		});
 		res.on('end', function() {
-			var json = JSON.parse(body);
+			var json = { address: body };
+
 			cb(null, res.statusCode, json);
 		});
 	}).on('error', cb);
